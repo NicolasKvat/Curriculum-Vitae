@@ -1,0 +1,274 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    background: beige;
+    background-image: url(img1.png);
+}
+/* barre de navigation */
+.topbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    width: 610px;
+    margin: 20px 30%;
+    background: #fbfbfb;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slidedown 1s;
+  }
+
+  .topbar a{
+      display: flex;
+      padding: 0 10px;
+      text-decoration: none;
+      color: #A5AEB9;
+      width: 80px;
+      height: 30px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      transition: color .3s, background 0.3s;
+    }
+
+    .topbar a:hover{
+        color: #000000;
+        background: rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    /* Page de présentation */
+    .presentation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 500px;
+      width: 610px;
+      margin-top: 20px;
+      background: #fbfbfb;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: slideright 1s;
+    }
+
+  .presentation h1 {
+    position: relative;
+    left: -205px;
+    text-align: center;
+    height: 48px;
+    width: 200px;
+    border-radius: 0 5px 5px 0;
+    background-color: beige;
+  }
+
+  .presentation p {
+    align-content: center;
+    height: 288px;
+    width: 525px;
+    border-radius: 5px;
+  }
+  /* Page de C.V */
+  .CV {
+    height: 1770px;
+    width: 1088px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #fbfbfb;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideleft2 1s;
+  }
+
+  .h1-CV {
+    text-align: center;
+    height: 48px;
+    width: 300px;
+    border-radius: 0 5px 5px 0;
+    background-color: beige;
+  }
+  /* Article de C.V (header)*/
+  .cv-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 200px;
+    width: 1088px;
+  }
+  /* Article de C.V (body)*/
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 140px;
+    width: 200px;
+  }
+
+  .info p {
+    margin: 2px;
+  }
+
+  .cv-art, .cv-art-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1088px;
+    height: 650px;
+  }
+
+  .ex-pro {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 950px;
+    margin: 0 70px;
+  }
+
+  .ex-pro h1 {
+    margin: 5px 0;
+  }
+
+.line {
+  height: 0px;
+  width: 950px;
+  border: 1px solid #A5AEB9;
+}
+
+.ex-proinfo-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 131px;
+  width: 950px;
+}
+
+.ex-proinfo-1 p {
+  height: 60px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 475px;
+  height: 131px;
+}
+
+.container h3 {
+  margin-bottom: 2px;
+}
+
+.container p {
+  margin-top: 2px;
+}
+
+.cv-art-2 {
+  display: flex;
+  flex-direction: row;
+  height: 475px;
+}
+
+.competences {
+  margin-left:70px;
+  height: 500px;
+  width: 475px;
+}
+
+.competences .line {
+  width: 237.5px;
+}
+
+.langues {
+  margin-right:70px;
+  height: 500px;
+  width: 470px;
+}
+
+.langues .line {
+  width: 237.5px;
+}
+
+.cv-art-3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 1088px;
+  height: 350px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 610px;
+  margin-top: 20px;
+  background: #fbfbfb;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: slideright 1s;
+}
+
+  .contact h1 {
+    position: relative;
+    left: -205px;
+    text-align: center;
+    height: 48px;
+    width: 200px;
+    border-radius: 0 5px 5px 0;
+    background-color: beige;
+  }
+
+  .contact .social {
+    height: 285px;
+    width: 525px;
+    border-radius: 5px;
+    background: beige;
+  }
+
+
+
+
+
+
+
+    @keyframes slidedown {
+        0% {
+            transform: translateY(-200px);
+        }
+        100% {
+            transform: translate(0);
+        }
+    }
+
+    @keyframes slideright {
+        0% {
+            transform: translateX(-2000px);
+        }
+        100% {
+            transform: translate(0);
+        }
+    }
+
+    @keyframes slideleft {
+        0% {
+            transform: translateX(500px);
+        }
+        100% {
+            transform: translate(0);
+        }
+    }
+
+    @keyframes slideleft2 {
+        0% {
+            transform: translateX(2000px);
+        }
+        100% {
+            transform: translate(0);
+        }
+    }
