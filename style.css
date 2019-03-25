@@ -5,9 +5,11 @@ body {
   flex-direction: column;
     margin: 0;
     font-family: 'Indie Flower', cursive;
-    background: beige;
-    background-image: url(img1.png);
-}
+    background-image: url(img/img-back.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+  }
 /* barre de navigation */
 .topbar{
     display: flex;
@@ -108,8 +110,9 @@ body {
     width: 200px;
   }
 
-  .info p {
+  .info p, .info a {
     margin: 2px;
+    color: black
   }
 
   .cv-art, .cv-art-2 {
@@ -229,6 +232,18 @@ body {
     width: 525px;
     border-radius: 5px;
     background: beige;
+  }
+
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    transition: scale 1s;
+  }
+
+  .social a:hover {
+    transform: scale(1.1);
   }
 
 
