@@ -75,6 +75,9 @@ body {
   }
   /* Page de C.V */
   .CV {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     height: 1770px;
     width: 1088px;
     margin-top: 20px;
@@ -86,6 +89,8 @@ body {
   }
 
   .h1-CV {
+    position: relative;
+    left: 0px;
     text-align: center;
     height: 48px;
     width: 300px;
@@ -119,7 +124,8 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 1088px;
+    align-items: center;
+    width: 90%;
     height: 650px;
   }
 
@@ -136,8 +142,10 @@ body {
   }
 
 .line {
+  display: flex;
+  flex-wrap: wrap;
   height: 0px;
-  width: 950px;
+  width: 100%;
   border: 1px solid #A5AEB9;
 }
 
@@ -146,8 +154,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 131px;
-  width: 950px;
+  height: 126px;
+  width: 100%;
 }
 
 .ex-proinfo-1 p {
@@ -158,7 +166,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 475px;
-  height: 131px;
+  height: 126px;
 }
 
 .container h3 {
@@ -173,6 +181,7 @@ body {
   display: flex;
   flex-direction: row;
   height: 475px;
+  width: 90%;
 }
 
 .competences {
@@ -239,11 +248,15 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    transition: scale 1s;
+    }
+
+  .social a {
+    padding: 20px;
+    transition: all .2s ease-in-out;
   }
 
   .social a:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 
 
@@ -287,3 +300,95 @@ body {
             transform: translate(0);
         }
     }
+     /* Responsive à partir de 1100px */
+    @media all and (max-width: 1100px) {
+      .CV, main .social {
+        width: 90%;
+      }
+
+      header, .cv-header, .cv-art, .ex-pro, .ex-pro, .container {
+        width: 100%;
+      }
+
+      .line, .cv-art-3 {
+        width: 90%;
+      }
+
+      .ex-pro, .ex-proinfo-1 {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+      }
+
+      .ex-proinfo-1 p, .container h3,.container p {
+        width: 100%;
+      }
+
+      .ex-proinfo-1 p {
+        text-align: center;
+      }
+
+    }
+      /* Responsive à partir de 676px */
+    @media all and (max-width: 676px) {
+
+      body {
+        font-size: .7em;
+      }
+
+      body, .CV,.cv-header, .cv-art,.cv-art-2, .cv-art-3, .ex-pro, .ex-pro, .ex-proinfo-1, .container, .competences, .langues{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .topbar, .presentation, .contact, .cv-art-3 {
+        width: 90%;
+      }
+
+      .contact .social {
+        width: 90%;
+      }
+
+      .presentation {
+        display: flex;
+        justify-content: center;
+      }
+
+      .presentation p {
+        height: 380px;
+        text-align: center;
+      }
+
+      .presentation h1, .h1-CV, .contact h1 {
+        position: relative;
+        left: 0px;
+        right: 0px;
+        width: 90%;
+        border-radius: 5px;
+      }
+
+      h1, h3 {
+        margin-left: 5%;
+        text-align: center;
+      }
+
+      header, .cv-header, .cv-art, .ex-pro, .ex-pro, .container {
+        width: 100%;
+      }
+        .line {
+          width: 90%;
+        }
+
+        .competences, .langues {
+          width: 100%;
+          margin: 0;
+        }
+
+        .competences h1, .langues h1 {
+          margin: 0;
+        }
+
+
+      }
