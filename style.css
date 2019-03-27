@@ -40,7 +40,7 @@ body {
       transition: color .3s, background 0.3s;
     }
 
-    .topbar a:hover{
+    .topbar a:hover, .topbar .active {
         color: #000000;
         background: rgba(0, 0, 0, 0.1);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
