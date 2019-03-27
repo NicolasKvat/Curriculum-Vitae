@@ -49,7 +49,7 @@ body {
     .presentation {
       display: flex;
       justify-content: center;
-      align-items: center;
+      /*align-items: center;*/
       flex-wrap: wrap;
       height: 500px;
       width: 610px;
@@ -73,11 +73,18 @@ body {
   }
 
   .presentation p {
-    align-content: center;
-    height: 288px;
-    width: 525px;
+    text-align: center;
+    height: 90px;
+    width: 90%;
     border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
   }
+
+  .presentation span {
+    font-weight: normal;
+  }
+
   /* Page de C.V */
   .CV {
     display: flex;
@@ -365,8 +372,9 @@ body {
       }
 
       .presentation p {
-        height: 380px;
+        /*height: 380px;*/
         text-align: center;
+        width: 90%;
       }
 
       .presentation h1, .h1-CV, .contact h1 {
@@ -375,6 +383,13 @@ body {
         right: 0px;
         width: 90%;
         border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .presentation h1, .contact h1 {
+        margin-left: 0;
       }
 
       h1, h3 {
